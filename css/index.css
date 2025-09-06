@@ -7,25 +7,25 @@ body {
   background-image:
   linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
   linear-gradient(to right, #0037ff, #ff6f00);
-  background-blend-mode:overlay;
+  background-blend-mode: overlay;
 }
 
 .header-flex {
   display: flex;
   align-items: center;
   gap: 20px;
-  background: linear-gradient(90deg, #000000, #001c80); /* Blue gradient */
+  background: linear-gradient(90deg, #000000, #001c80);
   padding: 20px 30px;
   border-radius: 12px;
-  box-shadow: 0 8px 25px rgb(255, 255, 255); /* Blue glow */
+  box-shadow: 0 8px 25px rgb(255, 255, 255);
   margin-bottom: 40px;
-  color: #ff6f00; /* Orange accent */
+  color: #ff6f00;
 }
 
 .header-flex img {
   width: 100px;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(255, 111, 0, 0.4); /* Orange glow */
+  box-shadow: 0 0 10px rgba(255, 111, 0, 0.4);
 }
 
 .header-flex h1 {
@@ -45,7 +45,6 @@ body {
   text-decoration: underline dotted;
 }
 
-/* ===== Gallery Grid ===== */
 .gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -53,7 +52,7 @@ body {
 }
 
 .gallery-item {
-  background: linear-gradient(180deg, #001a40, #000000); /* Blue-black gradient */
+  background: linear-gradient(180deg, #001a40, #000000);
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 4px 12px rgba(0, 55, 255, 0.3);
@@ -79,19 +78,19 @@ body {
   text-shadow: 1px 1px 2px rgba(0,0,0,0.6);
 }
 
-/* Hover Effects */
 .gallery-item:hover {
   transform: scale(1.05);
-  box-shadow: 0 8px 24px rgba(255, 111, 0, 0.5); /* Orange glow */
+  box-shadow: 0 8px 24px rgba(255, 111, 0, 0.5);
   border-color: #ff6f00;
 }
 
-/* ===== Lightbox Overlay ===== */
 .lightbox {
   display: none;
   position: fixed;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
+  top: 0; 
+  left: 0;
+  width: 100%; 
+  height: 100%;
   background: rgba(0, 0, 0, 0.95);
   justify-content: center;
   align-items: center;
@@ -105,11 +104,8 @@ body {
 }
 
 .lightbox img {
-  width:auto;
+  width: auto;
   height: auto;
-  align-items: center;
   border-radius: 16px;
-  border: 6px solid #0037ff;
-  box-shadow: 0 0 30px rgba(255,111,0,0.6);
-  background-clip: padding-box;
+  border: 6px solid #0
 }
