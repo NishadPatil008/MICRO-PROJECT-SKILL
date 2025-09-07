@@ -79,8 +79,8 @@ body {
 
 .gallery-item:hover {
   transform: scale(1.05);
-  box-shadow: 0 8px 24px rgba(255, 111, 0, 0.5);
-  border-color: #ff6f00;
+  box-shadow: 0 8px 24px rgb(255, 255, 255);
+  border-color: #ffffff;
 }
 
 .lightbox {
@@ -106,5 +106,5 @@ body {
   width: auto;
   height: auto;
   border-radius: 16px;
-  border: 6px solid #0
+  border: 6px solid #ff6f00;
 }
