@@ -53,8 +53,7 @@ body {
 .gallery-item {
   background: linear-gradient(180deg, #001a40, #000000);
   border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0, 55, 255, 0.3);
+  box-shadow: 0 4px 12px rgb(255, 255, 255);
   text-align: center;
   text-decoration: none;
   color: #f0f0f0;
@@ -95,7 +94,6 @@ body {
   align-items: center;
   z-index: 999;
   flex-direction: column;
-  overflow: auto;
 }
 
 .lightbox:target {
