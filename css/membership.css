@@ -97,81 +97,95 @@ nav ul li.login-link a:hover {
   background: #ffa733;
   transform: scale(1.05);
 }
-.gallery {
+
+.membership-section h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  color: var(--accent-color);
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.membership-section h2::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: white;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+.plan-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 30px;
   padding: 20px 0;
 }
 
-.gallery-item {
+.plan-card {
   background: #001a40;
   border: 2px solid var(--accent-color);
   border-radius: 12px;
-  overflow: hidden;
+  padding: 25px;
   box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
-  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  transition: transform 0.3s ease, border-color 0.3s ease;
   text-align: center;
-  text-decoration: none;
-  color: var(--text-color);
 }
 
-.gallery-item:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 8px 24px rgba(255, 255, 255, 0.3);
+.plan-card:hover {
+  transform: translateY(-8px);
   border-color: #fff;
 }
 
-.gallery-item img {
-  width: 100%;
-  height: auto;
-  display: block;
-  border-bottom: 1px solid var(--accent-color);
+.plan-card h3 {
+  font-size: 1.5rem;
+  color: var(--accent-color);
 }
 
-.gallery-item p {
-  padding: 12px;
+.plan-card .price {
+  font-size: 1.2rem;
   font-weight: bold;
-  background: #000;
-  color: var(--accent-color);
-  font-size: 1rem;
-  letter-spacing: 0.5px;
+  color: var(--text-color);
+  margin-bottom: 10px;
 }
 
-.lightbox {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.9);
-  justify-content: center;
-  align-items: center;
-  z-index: 999;
-  flex-direction: column;
+.plan-card ul {
+  list-style-type: square;
+  list-style-position: inside;
+  margin: 15px 0;
+  padding: 0;
+  text-align: left;
+}
+.contact-cta {
+  text-align: center;
+  margin-top: 60px;
+  padding: 40px 20px;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
 }
 
-.lightbox:target {
-  display: flex;
+.contact-cta h3 {
+  font-size: 1.6rem;
+  color: white;
+  margin-bottom: 20px;
 }
 
-.lightbox img {
-  max-width: 90%;
-  max-height: 90%;
-  border-radius: 16px;
-  border: 6px solid var(--accent-color);
-  object-fit: contain;
-}
-
-.close-btn {
-  position: absolute;
-  top: 30px;
-  right: 400px;
-  font-size: 2rem;
-  color: var(--accent-color);
+.contact-button {
+  display: inline-block;
+  padding: 12px 24px;
+  background: var(--accent-color);
+  color: #000;
+  font-weight: bold;
+  border-radius: 8px;
   text-decoration: none;
-  z-index: 1001;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.contact-button:hover {
+  transform: scale(1.05);
+  background: #ffa733;
 }
 
 footer {

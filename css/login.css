@@ -1,0 +1,125 @@
+:root {
+  --bg-gradient: linear-gradient(to right, #0037ff, #ff6f00); /* Light mode */
+  --text-color: #f0f0f0;
+}
+
+.dark-mode {
+  --bg-gradient: linear-gradient(to right, #000b37, #7e3500); /* Darker version */
+  --text-color: #e0e0e0;
+  --accent-color: #ffa733;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  color: var(--text-color);
+  background: var(--bg-gradient);
+  transition: background 0.5s ease, color 0.5s ease;
+  padding: 30px;
+}
+
+.dark-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: var(--accent-color);
+  color: #000;
+  border: none;
+  border-radius: 50%;
+  padding: 10px 14px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  z-index: 1000;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.login-section {
+  max-width: 400px;
+  margin: 100px auto;
+  padding: 30px;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
+  text-align: center;
+}
+
+.login-section h2 {
+  color: var(--accent-color);
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.login-form input {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: #001a40;
+  color: var(--text-color);
+  font-size: 1rem;
+}
+
+.login-form input::placeholder {
+  color: #aaa;
+}
+
+.login-form button.login-button {
+  padding: 12px;
+  background: var(--accent-color);
+  color: #000;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.login-form button.login-button:hover {
+  transform: scale(1.05);
+  background: #ffa733;
+}
+
+.back-link {
+  margin-top: 20px;
+}
+
+.back-link a {
+  color: var(--accent-color);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  padding: 30px 20px;
+  margin-top: 40px;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 12px;
+  color: var(--text-color);
+  font-size: 0.9rem;
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
+}
+
+.delay-1 { animation-delay: 0.3s; }
+.delay-2 { animation-delay: 0.6s; }
+.delay-3 { animation-delay: 0.9s; }
+.delay-4 { animation-delay: 1.2s; }
+
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
+
+@keyframes fadeInTop {
+  from { opacity: 0; transform: translateY(-30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInRight {
+  from { opacity: 0; transform: translateX(30px); }
+  to { opacity: 1; transform: translateX(0); }
+}

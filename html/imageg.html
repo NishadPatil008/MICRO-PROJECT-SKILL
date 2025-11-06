@@ -5,26 +5,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Image Gallery</title>
   <link rel="stylesheet" href="/css/imageg.css" />
+  <script src="/js/darkmode.js" defer></script>
 </head>
 
 <body>
-  <div class="header-flex">
-    <img src="/img/The-Zone-Logo-with-uper-text.png" alt="Zone360 Logo" />
-    <header>
-      <h1>Nitrro Zone 360 - Balewadi</h1>
-      <p>Image Gallery</p>
-    </header>
-  </div>
+  <button id="darkModeToggle" class="dark-toggle">🌙</button>
 
-  <nav>
-    <ul>
-      <li><a href="/html/index.html">Home</a></li>
-      <li>Trainers</li>
-      <li>Membership Plans</li>
-      <li>Contact Us</li>
-    </ul>
-  </nav>
-
+<div class="header-flex fade-in-top">
+  <img src="/img/The-Zone-Logo-with-uper-text.png" alt="Zone360 Logo" />
+  <header>
+    <h1 class="fade-in">Nitrro Zone 360 - Balewadi</h1>
+    <p class="fade-in delay-1">Image Gallery</p>
+  </header>
+</div>
+<nav class="fade-in delay-2">
+  <ul>
+    <li><a href="/html/index.html" class="fade-in-right">Home</a></li>
+    <li><a href="/html/membership.html" class="fade-in-right delay-1">Membership Plans</a></li>
+    <li><a href="/html/contact.html" class="fade-in-right delay-2">Contact Us</a></li>
+    <li class="login-link"><a href="/html/login.html" class="fade-in-right delay-3">Login</a></li>
+  </ul>
+</nav>
+  
   <section class="gallery">
     <a href="#img1" class="gallery-item">
       <img src="/gallery/1.png" alt="Image 1" />
@@ -51,24 +53,23 @@
       <p>Chest Zone 2</p>
     </a>
   </section>
-
-  <div class="lightbox" id="img1">
-    <a href="#"><img src="/gallery/1.png" alt="Zoomed Image 1" /></a>
-  </div>
-  <div class="lightbox" id="img2">
-    <a href="#"><img src="/gallery/2.png" alt="Zoomed Image 2" /></a>
-  </div>
-  <div class="lightbox" id="img3">
-    <a href="#"><img src="/gallery/3.png" alt="Zoomed Image 3" /></a>
-  </div>
-  <div class="lightbox" id="img4">
-    <a href="#"><img src="/gallery/4.png" alt="Zoomed Image 4" /></a>
-  </div>
-  <div class="lightbox" id="img5">
-    <a href="#"><img src="/gallery/5.png" alt="Zoomed Image 5" /></a>
-  </div>
-  <div class="lightbox" id="img6">
-    <a href="#"><img src="/gallery/6.png" alt="Zoomed Image 6" /></a>
-  </div>
+  <div class="lightbox" id="img1"><a href="#" class="close-btn">❌</a><img src="/gallery/1.png" alt="Zoomed Image 1" /></div>
+  <div class="lightbox" id="img2"><a href="#" class="close-btn">❌</a><img src="/gallery/2.png" alt="Zoomed Image 2" /></div>
+  <div class="lightbox" id="img3"><a href="#" class="close-btn">❌</a><img src="/gallery/3.png" alt="Zoomed Image 3" /></div>
+  <div class="lightbox" id="img4"><a href="#" class="close-btn">❌</a><img src="/gallery/4.png" alt="Zoomed Image 4" /></div>
+  <div class="lightbox" id="img5"><a href="#" class="close-btn">❌</a><img src="/gallery/5.png" alt="Zoomed Image 5" /></div>
+  <div class="lightbox" id="img6"><a href="#" class="close-btn">❌</a><img src="/gallery/6.png" alt="Zoomed Image 6" /></div>
+  <div class="lightbox" id="img1"><a href="#"><img src="/gallery/1.png" alt="Zoomed Image 1" /></a></div>
+  <div class="lightbox" id="img2"><a href="#"><img src="/gallery/2.png" alt="Zoomed Image 2" /></a></div>
+  <div class="lightbox" id="img3"><a href="#"><img src="/gallery/3.png" alt="Zoomed Image 3" /></a></div>
+  <div class="lightbox" id="img4"><a href="#"><img src="/gallery/4.png" alt="Zoomed Image 4" /></a></div>
+  <div class="lightbox" id="img5"><a href="#"><img src="/gallery/5.png" alt="Zoomed Image 5" /></a></div>
+  <div class="lightbox" id="img6"><a href="#"><img src="/gallery/6.png" alt="Zoomed Image 6" /></a></div>
+  <footer>
+  <p>&copy; 2025 Nitrro Zone 360 - Balewadi. All rights reserved.</p>
+  <p>Designed by Nishad Patil & Sandesh Kotwal</p>
+  <p>SY CSE 2 (ACADEMIC YEAR 2025-26)</p>
+</footer>
+</div>
 </body>
 </html>
