@@ -86,8 +86,8 @@ nav ul li a:hover {
 }
 
 nav ul li.login-link a {
-  background: var(--accent-color);
-  color: #000;
+  background: #ff6f00;
+  color: white;
   padding: 8px 16px;
   border-radius: 8px;
   transition: background 0.3s ease, transform 0.3s ease;
