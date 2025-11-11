@@ -91,7 +91,7 @@ nav ul li.login-link a {
   padding: 8px 16px;
   border-radius: 8px;
   transition: background 0.3s ease, transform 0.3s ease;
-}
+} 
 
 nav ul li.login-link a:hover {
   background: #ffa733;
