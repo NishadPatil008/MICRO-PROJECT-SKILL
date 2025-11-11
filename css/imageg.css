@@ -1,10 +1,10 @@
 :root {
-  --bg-gradient: linear-gradient(to right, #0037ff, #ff6f00); /* Light mode */
+  --bg-gradient: linear-gradient(to right, #0037ff, #ff6f00); 
   --text-color: #f0f0f0;
 }
 
 .dark-mode {
-  --bg-gradient: linear-gradient(to right, #000b37, #7e3500); /* Darker version */
+  --bg-gradient: linear-gradient(to right, #000b37, #7e3500); 
   --text-color: #e0e0e0;
   --accent-color: #ffa733;
 }
